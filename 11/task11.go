@@ -16,5 +16,6 @@ func main() {
 			res = append(res, v)
 		}
 	}
+	//O(len(arr1)+len(arr2))
 	fmt.Println(res)
 }

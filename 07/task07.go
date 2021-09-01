@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"sync"
+	"time"
 )
 
 func main() {
@@ -12,6 +13,7 @@ func main() {
 	for i := 0; i < 10; i++ {
 		go writeMap(concMap, mu)
 	}
+	time.Sleep(1 * time.Second)
 	readMap(concMap, mu)
 }
 
